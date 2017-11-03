@@ -14,6 +14,11 @@
   color: grey;
   text-indent: 0px !important;
 }
+.row h4 {
+  font-family: 'Sumana', serif;
+  font-weight: 600;
+  font-size: 18px;
+}
 
 /*styling for the nav bar*/
 #header {
@@ -61,19 +66,13 @@
 }
 
 /*styling for background content*/
-#top p {
+.row p {
   font-family: 'Sumana', serif;
   text-indent: 50px;
-}
-#top h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-size: 18px;
 }
 #top-img img {
   width: 100%;
-}
-#top p {
-  font-size: 18px;
 }
 #top em {
   font-size: 50px;
@@ -81,3 +80,46 @@
   margin-right: 5px;
   line-height: 20px;
 }
+
+#tournament {
+  margin-bottom: 35px;
+}
+#tourn-chart {
+  min-height: 200px;
+}
+
+/* Style the tab buttons */
+.tablink {
+    background-color: #afb0b3;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+    width: 25%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    max-width: max-content;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 25px;
+}
+
+.tabcontent h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/* Style each tab content individually */
+#ro128, #ro64, #ro32, #ro16, #qf, #sf, #f {background-color:#e2e2e3;}
