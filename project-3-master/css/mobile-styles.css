@@ -1,0 +1,45 @@
+/*styles by Elisabeth Parker*/
+@media screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline !important;
+  }
+
+  #header {
+    background-image: url(../images/header-mobile.png) !important;
+    min-height: 150px!important;
+  }
+  #title h1 {
+    font-size: 27.5px !important;
+  }
+  #title img {
+    max-width: 350px !important;
+  }
+
+  #meta img {
+    max-width: 50px !important;
+    max-height: 50px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+
+  .tablink {
+    padding: 5px !important;
+  }
+
+  #serveChart g:last-of-type .c3-legend-item{
+    transform: translate(0px,15px)!important;
+  }
+  #serveChart svg {
+    height: 420px !important;
+    margin-top: 10px !important;
+  }
+  div #tbl_filter, div #mobile-tbl_filter {
+    display: none;
+  }
+}
