@@ -15,10 +15,10 @@ var odf = [];
 
 $(document).ready(function(){
     $('#tbl').DataTable( {
-      "ajax": '../swdata.txt'
+      "ajax": 'data/swdata.txt'
     });
     $('#mobile-tbl').DataTable( {
-      "ajax": '../mobile-swdata.txt'
+      "ajax": 'data/mobile-swdata.txt'
     });
     document.getElementById('mobile-tbl_wrapper').classList.add('mobile');
     loadData();
@@ -28,7 +28,7 @@ $(document).ready(function(){
 function loadData() {
   $.ajax({
             type:"GET",
-            url:"../data.json",
+            url:"../data/data.json",
             dataType:"text",
             success: parseData
   })
